@@ -1,8 +1,7 @@
-# React + Vite
+### (⚠️⚠️⚠️ Count ni update qilgani URL da PUT/PATCH metodi pdf da yo'q ekan, App.jsx da consolega chiqarib qo'ydim, user va categoryni tanlagandan keyin count kelib chiqadi va uni o'zgartirish hususiyati bor, set bosilganda usha count inputga kiritilgan qiymatni console ga chiqaradi
+# React + Vite + TailwindCSS orqali bajarilgan!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Loyihani ishga tushurish uchun commandga:
+ 1. npm install
+ 2. npm run dev
+## deb yozilsin
