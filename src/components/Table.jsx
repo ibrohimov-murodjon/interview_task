@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { HeroAvatar1 } from "../assets";
 
 export default function Table({ onCountUpdate }) {
   const [data, setData] = useState([]);
@@ -132,7 +133,7 @@ export default function Table({ onCountUpdate }) {
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="flex items-center">
                     <img
-                      src={row.avatar || "./public/hero-avatar-1.jpg"}
+                      src={row.avatar || HeroAvatar1}
                       alt=""
                       className="h-8 w-8 rounded-full"
                     />

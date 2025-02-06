@@ -1,28 +1,40 @@
+import {
+  BookImg,
+  BusinessmanWoman,
+  DartLogo,
+  Deal,
+  FigmaLogo,
+  FlutterLogo,
+  HeroAvatar1,
+  HeroAvatar2,
+  HeroAvatar3,
+  HTMLLogo,
+  PeopleWorkingOut,
+  PythonLogo,
+  YoungBusinessman,
+} from "../assets";
+
 export default function Hero() {
   return (
     <section className="container relative overflow-hidden bg-white">
+      <img src={HTMLLogo} alt="HTML5" className="absolute top-10 right-1/2" />
       <img
-        src="./public/logos/html-logo.png"
-        alt="HTML5"
-        className="absolute top-10 right-1/2"
-      />
-      <img
-        src="./public/logos/figma-logo.png"
+        src={FigmaLogo}
         alt="FIGMA"
         className="absolute top-10 left-[15px]"
       />
       <img
-        src="./public/logos/flutter-logo.png"
+        src={FlutterLogo}
         alt="Flutter"
         className="absolute top-[25%] right-10 w-16 h-16 md:w-20 md:h-20"
       />
       <img
-        src="./public/logos/python-logo.png"
+        src={PythonLogo}
         alt="Python"
         className="absolute left-[15%] top-[25%] w-16 h-16 md:w-20 md:h-20"
       />
       <img
-        src="./public/logos/dart-logo.png"
+        src={DartLogo}
         alt="dart"
         className="absolute right-1/4 w-16 h-16 top-[21%] md:w-20 md:h-20"
       />
@@ -37,14 +49,24 @@ export default function Hero() {
             <div className="flex items-center gap-3">
               {/* Avatar group */}
               <div className="flex -space-x-2 overflow-hidden">
-                {[1, 2, 3].map((_, index) => (
-                  <img
-                    key={index}
-                    className="inline-block h-12 w-12 rounded-full"
-                    src={`./public/hero-avatar-${index + 1}.jpg`}
-                    alt={`Person ${index + 1}`}
-                  />
-                ))}
+                <img
+                  key={index}
+                  className="inline-block h-12 w-12 rounded-full"
+                  src={HeroAvatar1}
+                  alt="HeroAvatar1"
+                />
+                <img
+                  key={index}
+                  className="inline-block h-12 w-12 rounded-full"
+                  src={HeroAvatar2}
+                  alt="HeroAvatar2"
+                />
+                <img
+                  key={index}
+                  className="inline-block h-12 w-12 rounded-full"
+                  src={HeroAvatar3}
+                  alt="HeroAvatar3"
+                />
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-btnClr ring-2 ring-white text-sm font-medium text-white">
                   +120
                 </span>
@@ -76,19 +98,11 @@ export default function Hero() {
             </p>
           </div>
           <div className="main__info relative">
-            <img
-              className="mt-20 ml-[-69px]"
-              src="./public/cheerful-young-businessman.png"
-              alt=""
-            />
-            <img
-              className="absolute right-2 top-28"
-              src="./public/book-img.png"
-              alt=""
-            />
+            <img className="mt-20 ml-[-69px]" src={YoungBusinessman} alt="" />
+            <img className="absolute right-2 top-28" src={BookImg} alt="" />
             <img
               className="absolute bottom-[-20px] right-10"
-              src="./public/people-working-out.png"
+              src={PeopleWorkingOut}
               alt=""
             />
           </div>
@@ -111,15 +125,11 @@ export default function Hero() {
             </p>
           </div>
           <div className="main__info relative">
-            <img
-              className="mt-20 ml-[-62px]"
-              src="./public/charming-businesswoman.png"
-              alt=""
-            />
+            <img className="mt-20 ml-[-62px]" src={BusinessmanWoman} alt="" />
 
             <img
               className="absolute bottom-[-20px] right-4"
-              src="./public/deal.png"
+              src={Deal}
               alt=""
             />
           </div>
@@ -128,5 +138,3 @@ export default function Hero() {
     </section>
   );
 }
-
-// charming - businesswoman.png;

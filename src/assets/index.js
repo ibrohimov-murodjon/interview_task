@@ -1,0 +1,16 @@
+export { default as HTMLLogo } from "./html-logo.png";
+export { default as FigmaLogo } from "./figma-logo.png";
+export { default as FlutterLogo } from "./flutter-logo.png";
+export { default as PythonLogo } from "./python-logo.png";
+export { default as DartLogo } from "./dart-logo.png";
+export { default as BgPhoneLg } from "./bg-phone-lg.png";
+export { default as BgPhoneMd } from "./bg-phone-md.png";
+export { default as BookImg } from "./book-img.png";
+export { default as YoungBusinessman } from "./cheerful-young-businessman.png";
+export { default as BusinessmanWoman } from "./charming-businesswoman.png";
+export { default as Deal } from "./deal.png";
+export { default as FormBg } from "./form-bg.png";
+export { default as HeroAvatar1 } from "./hero-avatar-1.jpg";
+export { default as HeroAvatar2 } from "./hero-avatar-2.jpg";
+export { default as HeroAvatar3 } from "./hero-avatar-3.jpg";
+export { default as PeopleWorkingOut } from "./people-working-out.png";

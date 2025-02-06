@@ -12,20 +12,20 @@
 }
 
 .main__info {
-  background-image: url("../public/bg-phone-lg.png");
+  background-image: url("./assets/bg-phone-lg.png");
   background-repeat: no-repeat;
   height: 492px;
   width: 427px;
 }
 .main__info:nth-child(2) {
-  background-image: url("../public/bg-phone-md.png");
+  background-image: url("./assets/bg-phone-md.png");
 }
 .info__section:nth-child(2n) {
   flex-direction: row-reverse;
   padding-top: 120px;
 }
 .form__section {
-  background-image: url("../public/form-bg.png");
+  background-image: url("./assets/form-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 90px;

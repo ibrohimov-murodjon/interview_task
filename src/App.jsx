@@ -7,9 +7,7 @@ function App() {
 
   const handleSetCount = async (userId, categoryId, count) => {
     try {
-      // In a real application, you would make an API call here to update the count
       console.log("Updating count:", { userId, categoryId, count });
-      // Trigger table refresh
       setUpdateTrigger((prev) => prev + 1);
     } catch (error) {
       console.error("Error updating count:", error);
