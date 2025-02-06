@@ -50,19 +50,16 @@ export default function Hero() {
               {/* Avatar group */}
               <div className="flex -space-x-2 overflow-hidden">
                 <img
-                  key={index}
                   className="inline-block h-12 w-12 rounded-full"
                   src={HeroAvatar1}
                   alt="HeroAvatar1"
                 />
                 <img
-                  key={index}
                   className="inline-block h-12 w-12 rounded-full"
                   src={HeroAvatar2}
                   alt="HeroAvatar2"
                 />
                 <img
-                  key={index}
                   className="inline-block h-12 w-12 rounded-full"
                   src={HeroAvatar3}
                   alt="HeroAvatar3"
