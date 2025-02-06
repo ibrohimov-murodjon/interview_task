@@ -17,7 +17,6 @@ export default function Form({ onSetCount }) {
           fetch("https://python-api-task.onrender.com/categories"),
         ]);
         const usersData = await usersRes.json();
-        console.log("Users data:", usersData);
         const categoriesData = await categoriesRes.json();
         setUsers(usersData);
         setCategories(categoriesData);
@@ -39,8 +38,10 @@ export default function Form({ onSetCount }) {
           const countsData = await res.json();
           const count = countsData.find(
             (c) =>
-              c.user_id === selectedUser && c.category_id === selectedCategory
+              c.user_id == selectedUser && c.category_id == selectedCategory
           );
+          console.log(countsData);
+          console.log("count", count);
           setCurrentCount(count ? count.count : 0);
           setCount(count ? count.count : 0);
         } catch (error) {

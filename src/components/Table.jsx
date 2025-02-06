@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { HeroAvatar1 } from "../assets";
 
-export default function Table({ onCountUpdate }) {
+export default function Table() {
   const [data, setData] = useState([]);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
   const [categories, setCategories] = useState([]);
@@ -34,7 +34,6 @@ export default function Table({ onCountUpdate }) {
           );
           return countRecord ? countRecord.count : 0;
         });
-        console.log(users, "users");
         return {
           id: user.id,
           username: user.first_name,
@@ -44,7 +43,6 @@ export default function Table({ onCountUpdate }) {
         };
       });
 
-      console.log("Processed Data:", processedData);
       setData(processedData);
     } catch (error) {
       console.error("Error fetching data:", error);
